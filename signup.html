@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cadastro</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    </head>
+
+    <style>
+        .btn:hover {
+            filter: brightness(0.9);
+        }
+    </style>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Cadastro</h3>
+                            <form id="loginForm">
+                                <div class="form-group">
+                                    <label for="username">Nome</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Semha</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">CPF</label>
+                                    <input type="text" class="form-control" id="cpf" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Telefone</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Foto</label>
+                                    <input type="file" class="form-control" id="photo" required>
+                                </div>
+                                <a href="./login.html" class="btn btn-primary col-md-12 mt-4" role="button" id="signup">Cadastrar</a>
+                                <a href="./login.html" class="btn btn-outline-danger col-md-12 mt-4" role="button">Voltar</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+             $("#signup").on("click", function() {
+                alert("Cadastrado com sucesso!")
+            })
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    </body>
+</html>
