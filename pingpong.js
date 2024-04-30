@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     if(message === "ping") {
         return res.json({ response: "pong" })
     } else {
-        return res.status(400).json({ error: "Erro" })
+        return res.status(400).json({ error: "Erro - 'ping' não encontrado" })
     }
 })
 
